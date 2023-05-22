@@ -1,13 +1,10 @@
 import React from "react";
+import WeaponsForm from "./WeaponsForm";
+import WeaponsDisplay from "./WeaponsDisplay";
 
 class WeaponsPage extends React.Component {
     constructor(props) {
         super(props)
-
-        //Get the Locally Stored list of Weapons
-        this.state = {
-            ListOfWeapons: []
-        }
     }
 
     componentDidMount = () => {};
@@ -16,6 +13,8 @@ class WeaponsPage extends React.Component {
         return(
             <div>
                 <h2>Weapons Page</h2>
+                <WeaponsForm />
+                <WeaponsDisplay />
             </div>
         )
     }

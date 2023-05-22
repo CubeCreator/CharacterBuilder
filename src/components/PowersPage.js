@@ -1,5 +1,6 @@
 import React from "react";
-import { propTypes } from "react-bootstrap/esm/Image";
+import PowersForm from "./PowersForm";
+import PowersDisplay from "./PowersDisplay";
 
 class PowersPage extends React.Component {
     constructor(props) {
@@ -17,6 +18,8 @@ class PowersPage extends React.Component {
         return(
             <div>
                 <h2>Powers & Abilties Page</h2>
+                <PowersForm />
+                <PowersDisplay />
             </div>
         )
     }
